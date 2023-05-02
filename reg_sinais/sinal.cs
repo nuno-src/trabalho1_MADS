@@ -9,9 +9,11 @@ namespace reg_sinais
     internal class sinal
     {
         private int id;
-        private int codigo;
+        private string toponomia;
         private int numero; // apenas para sinais com numeros
-        private int referencia;
+        private int referencia; // codigo do site Infra estruturas
+        private DateTime data_colocacao;
+        private DateTime data_removido;
 
         /*
          
@@ -40,7 +42,33 @@ namespace reg_sinais
          
          */
 
+        // contrutores:
+        public sinal()
+        {
+            id = 0;
+            toponomia = "";
+            numero = 0;
+            referencia = 0;
+            data_colocacao = new DateTime();
+            data_removido = new DateTime();
 
+        }
+
+        public sinal(int nid, string ntoponomia, int nnumero, int nreferencia, DateTime ndt_col, DateTime ndt_remo)
+        {
+            id = nid;
+            toponomia = ntoponomia;
+            numero = nnumero;
+            referencia = nreferencia;
+            data_colocacao = ndt_col;
+            data_removido = ndt_remo;
+
+        }
+
+
+
+        public int Id { get => id; set => id = value; }
+        public string Toponomia { get => toponomia; set => toponomia = value; }
 
 
 
