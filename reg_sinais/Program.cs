@@ -8,7 +8,7 @@ namespace reg_sinais
 {
     internal class Program
     {
-        private static List<sinal> lista_sinais = new List<sinal>();
+        public static List<sinal> lista_sinais = new List<sinal>();
         static void Main(string[] args)
         {
 

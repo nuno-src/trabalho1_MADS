@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reg_sinais", "reg_sinais\reg_sinais.csproj", "{367CDD5C-90E0-44C6-8810-1A8171F16BE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests", "NUnitTests\NUnitTests.csproj", "{999B5E7D-6F70-4588-8FA5-BCC176D95433}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{367CDD5C-90E0-44C6-8810-1A8171F16BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{367CDD5C-90E0-44C6-8810-1A8171F16BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{367CDD5C-90E0-44C6-8810-1A8171F16BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{999B5E7D-6F70-4588-8FA5-BCC176D95433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999B5E7D-6F70-4588-8FA5-BCC176D95433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999B5E7D-6F70-4588-8FA5-BCC176D95433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999B5E7D-6F70-4588-8FA5-BCC176D95433}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
