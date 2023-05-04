@@ -8,8 +8,12 @@ namespace reg_sinais
 {
     internal class Program
     {
+<<<<<<< HEAD
         
         //public static List<sinal> lista_sinais = new List<sinal>();
+=======
+        public static List<sinal> lista_sinais = new List<sinal>();
+>>>>>>> 4c3ac89c0342b19786fe0e2d627a021e6ae65bb2
         static void Main(string[] args)
         {
 
