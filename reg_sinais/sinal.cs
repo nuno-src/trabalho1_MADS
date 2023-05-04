@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace reg_sinais
 {
-    internal class sinal
+    public class Sinal
     {
         private int id;
         private string toponomia;
         private int numero; // apenas para sinais com numeros
         private int referencia; // codigo do site Infra estruturas
+        private bool estado;
         private DateTime data_colocacao;
         private DateTime data_removido;
 
@@ -43,23 +44,38 @@ namespace reg_sinais
          */
 
         // contrutores:
-        public sinal()
+        public Sinal()
         {
             id = 0;
             toponomia = "";
             numero = 0;
             referencia = 0;
+            estado = false;
             data_colocacao = new DateTime();
             data_removido = new DateTime();
 
         }
 
-        public sinal(int nid, string ntoponomia, int nnumero, int nreferencia, DateTime ndt_col, DateTime ndt_remo)
+
+        public Sinal(int nid, string ntoponomia, int nnumero, int nreferencia, bool nestado, DateTime ndt_col)
         {
             id = nid;
             toponomia = ntoponomia;
             numero = nnumero;
             referencia = nreferencia;
+            estado = nestado;
+            data_colocacao = ndt_col;
+            
+
+        }
+
+        public Sinal(int nid, string ntoponomia, int nnumero, int nreferencia, bool nestado, DateTime ndt_col, DateTime ndt_remo)
+        {
+            id = nid;
+            toponomia = ntoponomia;
+            numero = nnumero;
+            referencia = nreferencia;
+            estado = nestado;
             data_colocacao = ndt_col;
             data_removido = ndt_remo;
 
@@ -69,8 +85,14 @@ namespace reg_sinais
 
         public int Id { get => id; set => id = value; }
         public string Toponomia { get => toponomia; set => toponomia = value; }
+        public int Numero { get => numero; set => numero = value; }
+        public int Referencia { get => referencia; set => referencia = value; }
 
+        public bool Estado { get => estado; set => estado = value; }
+        public DateTime Data_colocacao { get => data_colocacao; set => data_colocacao = value; }
+        public DateTime Data_removido { get => data_removido; set => data_removido = value; }
 
+        
 
     }
 }
