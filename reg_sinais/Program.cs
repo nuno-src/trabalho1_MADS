@@ -8,7 +8,8 @@ namespace reg_sinais
 {
     internal class Program
     {
-        private static List<sinal> lista_sinais = new List<sinal>();
+        
+        //public static List<sinal> lista_sinais = new List<sinal>();
         static void Main(string[] args)
         {
 
@@ -56,14 +57,14 @@ namespace reg_sinais
 
 
 
-
+            
 
 
         }
 
 
 
-        static void Adicionar_sinal()
+        public static void Adicionar_sinal()
         {
 
 
@@ -89,10 +90,10 @@ namespace reg_sinais
 
 
 
-            sinal s = new sinal(id, toponomia, numero, referencia, dt_col, dt_remo);
+            //sinal s = new sinal(id, toponomia, numero, referencia, dt_col, dt_remo);
 
-
-            lista_sinais.Add(s);
+            Sistema.Adicionar(id, toponomia, numero, referencia, dt_col, dt_remo);
+            //lista_sinais.Add(s);
 
 
 
@@ -107,7 +108,7 @@ namespace reg_sinais
         static void Consultar_sinais()
         {
 
-            foreach (sinal f in lista_sinais)
+            foreach (Sinal f in Sistema.lista_sinais)
             {
                 Console.WriteLine($"{f.Id} , {f.Toponomia}");
 

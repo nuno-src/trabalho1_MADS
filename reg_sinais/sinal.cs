@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace reg_sinais
 {
-    internal class sinal
+    public class Sinal
     {
         private int id;
         private string toponomia;
@@ -43,7 +43,7 @@ namespace reg_sinais
          */
 
         // contrutores:
-        public sinal()
+        public Sinal()
         {
             id = 0;
             toponomia = "";
@@ -54,7 +54,7 @@ namespace reg_sinais
 
         }
 
-        public sinal(int nid, string ntoponomia, int nnumero, int nreferencia, DateTime ndt_col, DateTime ndt_remo)
+        public Sinal(int nid, string ntoponomia, int nnumero, int nreferencia, DateTime ndt_col, DateTime ndt_remo)
         {
             id = nid;
             toponomia = ntoponomia;
@@ -69,8 +69,12 @@ namespace reg_sinais
 
         public int Id { get => id; set => id = value; }
         public string Toponomia { get => toponomia; set => toponomia = value; }
+        public int Numero { get => numero; set => numero = value; }
+        public int Referencia { get => referencia; set => referencia = value; }
+        public DateTime Data_colocacao { get => data_colocacao; set => data_colocacao = value; }
+        public DateTime Data_removido { get => data_removido; set => data_removido = value; }
 
-
+        
 
     }
 }
